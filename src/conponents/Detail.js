@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Detail (props){
-	const { images, tittle , price , rate ,descrip ,count} = props
+	const { images, tittle , price , rate ,descrip ,mobile} = props
     return(
         <>
  <div>           
@@ -12,6 +12,7 @@ function Detail (props){
 			    <div className="heading"> Price: {price} 
 			   <div className="author2"> TITTE: <span class="name ">{tittle}</span></div>
 			   <div className="author1"> DESCRIPTION: <br /> <span class="name ">{descrip}</span></div>
+			   <div className="author1"> Mobile: <br /> <span class="name ">{mobile}</span></div>
 		              
 			   </div>	  
 			  

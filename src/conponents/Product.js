@@ -3,13 +3,19 @@ import { getData } from "../config.js/firebase";
 import { useState, useEffect } from "react";
 import Card from "./Card";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 function Product() {
     const [ads, setAds] = useState([]);
     const [input, setInput] = useState("")
 
+
+    // const location = useLocation()
+    // console.log(location)
     useEffect(() => {
         getAds()
+
 
     }, [])
 
@@ -22,17 +28,14 @@ function Product() {
         return <div className='loader' ></div>
     }
 
-    const seach = () => {
-       
-        
 
-    }
+    // getFilteredList()
     return (
         <div>
-           
+
             <div className="inp" >
                 <input type="text" onChange={(e) => setInput(e.target.value)} value={input} placeholder="Searh Yout Product" />
-                <button onClick={seach} >Seach</button>
+                <button >Seach</button>
                 <button className="btn1">
                     <NavLink className="btn3" to={"/PostAd"}>Sell</NavLink>
                 </button>
@@ -40,17 +43,18 @@ function Product() {
 
             <div className="produc" >
                 <h1>Product Page</h1>
-                <select  >
+                <select   >
                     <option selected disabled >Items-Category</option>
-                    <option>All</option>
-                    <option>Electronic</option>
-                    <option>Vehicle</option>
-                    <option>Mobile Phone</option>
-                    <option>Laptop</option>
-                    <option>Animals</option>
-                    <option>Bike</option>
+                    <option value={""} >All</option>
+                    <option value={"Electronic"}   >Electronic</option>
+                    <option value={"Vehicle"} >Vehicle</option>
+                    <option value={"Mobile Phone"} >Mobile Phone</option>
+                    <option value={"Laptop"} >Laptop</option>
+                    <option value={"Animals"} >Animals</option>
+                    <option value={"Bike"} >Bike</option>
                 </select>
             </div>
+
 
             <div className="main" >
 

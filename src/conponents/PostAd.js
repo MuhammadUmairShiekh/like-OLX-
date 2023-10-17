@@ -8,6 +8,7 @@ function PostAd() {
     const [tittle, settittle] = useState("")
     const [descrip, setDescrip] = useState("")
     const [price, setPrice] = useState("")
+    const [number, setNumber] = useState("")
     const [category, setCategory] = useState("")
     const [file, setFile] = useState("")
     const [loading, setLoading] = useState(false)
@@ -23,11 +24,12 @@ function PostAd() {
         }
         else {
             setLoading(true)
-            await postAds({ tittle, category, descrip, price, file: file[0] })
+            await postAds({ tittle, category, descrip, price, number , file: file[0] })
             settittle("")
             setDescrip("")
             setPrice("")
             setCategory("")
+            setNumber("")
             setLoading(false)
         }
 
@@ -56,6 +58,8 @@ function PostAd() {
                     </select>
                     <label>Description</label>
                     <textarea rows="4" cols="50" onChange={(e) => setDescrip(e.target.value)} value={descrip} placeholder="Product Descrip" required="" > </textarea>
+                    <label>Mobile No</label>
+                    <input type="number" onChange={(e) => setNumber(e.target.value)} value={number} placeholder="Enter Mobile Number" required="" />
                     <label>Price</label>
                     <input type="number" onChange={(e) => setPrice(e.target.value)} value={price} placeholder="Product Price" required="" />
                     <input type="file" className="file" onChange={(e) => setFile(e.target.files)} required="" />

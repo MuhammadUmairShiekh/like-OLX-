@@ -47,10 +47,10 @@ function signIN(email, password) {
 
 }
 
-async function postAds({ tittle, descrip, category, price, file }) {
+async function postAds({ tittle, descrip, category, price, file , number}) {
     try {
         const url = await uploadImages(file)
-        const data = { tittle, descrip, category, price: +price, image: url }
+        const data = { tittle, descrip, category, number: +number,  price: +price, image: url }
         await addDoc(collection(db, "Ads"), data);
         Swal.fire({
             icon: 'success',
@@ -86,7 +86,7 @@ async function getData() {
 }
 
 async function getIdData() {
-    const docRef = doc(db, "Ads" , "0scB2MXsneFjrRqsaKLm");
+    const docRef = doc(db, "Ads" , "ZY7f2Ds8UtwF56UdmQAX");
     const docSnap = await getDoc(docRef)
      return docSnap.data()
     // console.log(docSnap.data());

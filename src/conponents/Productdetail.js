@@ -38,7 +38,7 @@ function Productdetail() {
         <>
             <h1>Detail Page</h1>
            
-            <Detail  descrip={detail.descrip} images={detail.image} tittle={detail.tittle} price={detail.price} />
+            <Detail mobile={"92"+detail.number  }  descrip={detail.descrip} images={detail.image} tittle={detail.tittle} price={detail.price} />
 
 
         </>

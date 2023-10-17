@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+ 
+}
+.btn3 button {
+  color: rgb(10, 92, 255);
+  background-color: #ffff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  /* width: 100%; */
+  padding: 6px;
+  cursor: pointer;
+}
+.btn2{
+  background-color: rgb(22, 42, 130);
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  
+}
+.meni{
+  background-image: url(../images/cars.jpg);
+  background-size: 10%;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* padding: 0 -50px; */
+   display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #101617;
+  position: relative;
+}
+
+.logo {
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+}
+
+.nav-elements ul {
+  display: flex;
+  /* justify-content: center; */
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 20px;
+
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-elements ul li i{
+  color: white;
+  border-bottom: 2px solid palevioletred;
+  /* background-image: url(../images/512.gif);
+  background-repeat: no-repeat;
+  background-size: 10%; */
+}
+.nav-elements ul a.active {
+  color: palevioletred;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e6e3e3;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar{
+    background-color: #fff;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color:#222f3e ;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
+
+/* <<<<<<<<<<Navber End>>>>>>>>>>>>>>>>> */
+.contactPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  
+}
+
+.produc{
+  display: flex;
+  justify-content: space-around;  
+  margin-top: 10px;
+}
+.inp{
+  margin: 20px auto 20px auto;
+  display: flex;
+  justify-content: center;
+ flex-wrap: wrap;
+  font-size: 20px;
+}
+
+.inp input{
+  padding: 10px;
+  width: 50%;
+}
+.inp button{
+  width: 10%;
+  background-color: rgb(10, 37, 127);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.inp .btn1{  
+  margin-left: 10px;
+  background-color: transparent;
+  border-bottom: 4px solid blue;
+  border-right: 4px solid red;
+  border-top: 4px solid yellow;
+  border-left: 4px solid red;
+  font-size: 18px;
+  /* padding: 10px; */
+  /* border-radius:  0px   15px  15px  0px; */
+  border-radius: 50px;
+}
+.btn1 .btn3{
+  color: #222f3e;
+
+}
+
+
+/* <<<<<<<<<cotact Form>>>>> */
+
+
+
+/* <<<Contect end>>>>> */

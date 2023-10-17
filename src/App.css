@@ -1,38 +1,443 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* <<<<<<<<<<<,Navber>>>>>>>>> */
+.logo {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #1877f2;
+  font-weight: 700;
+  
+}
+
+.form {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: rgb(15, 23, 36); */
+  background: #fff;
+  padding: 1.5rem 1rem;
+  width: 390px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin: auto;
+}
+.form1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: rgb(15, 23, 36); */
+  background: #fff;
+  padding: 1.5rem 1rem;
+  width: 390px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin: auto;
+}
+
+.form input {
+  outline: none;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 0.9rem;
+}
+.form select {
+  outline: none;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 0.9rem;
+}
+.form input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+.form .login {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  /* margin-top: 2rem; */
+  font-size: 1.1rem;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.form .login:hover {
+  background: #65a0ee;
+  cursor: pointer;
+}
+
+.form .a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.8rem;
+  /* margin-top: 1rem; */
+  color: #1877f2;
+}
+
+.form hr {
+  background: #f7f7f7;
+
+  margin: 1.1rem ;
+}
+
+.form .create-account {
+  outline: none;
+  border: none;
+  background: #06b909;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  width: 75%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.form .create-account:hover {
+  background: #03ad06;
+  cursor: pointer;
+}
+/* <<<<<<<<<<<<<<end Form>>>>> */
+
+.ads{
+  background-color: #636e72 ;
+  width: 100%;
+  height: 10%;
+  padding: 50px;
+}
+
+.logi{
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.62);
+  width: 100%;
+  height: 100vh;
+
+}
+/* <<<<<POstAdd>>>>>>>>>>>>> */
+.form1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: rgb(15, 23, 36); */
+  background: #fff;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-top: 20px;
+}
+
+.form1 input{
+  outline: none;  
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 0.9rem;
+}
+
+.form1 textarea{
+  border: 1px solid black;
+  color: black;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 0.9rem;
+}
+.form1 select {
+  outline: none;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.6rem;
+  font-size: 0.9rem;
+}
+.form1 input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+.form1 .login {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  /* margin-top: 2rem; */
+  font-size: 1.1rem;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form1 .login:hover {
+  background: #65a0ee;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form1 .a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.8rem;
+  margin-top: 1rem;
+  color: #1877f2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form1 hr {
+  background: #f7f7f7;
+
+  margin: 1.1rem ;
+}
+
+.form1 .create-account {
+  outline: none;
+  border: none;
+  background: #06b909;
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  width: 75%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.form1 .create-account:hover {
+  background: #03ad06;
+  cursor: pointer;
+}
+
+/* <<<<<<<<<<<<PostEnd>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<,Product Card>>>>>>>>>>>>>>>>> */
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 300px;
+  height: 380px;
+  background: #4a69bd;
+  padding: .5em;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1 {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 700px;
+  height: 350px;
+  background: #1e5a95;
+  padding: .5em;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  
+  justify-content: center;
+   margin: auto;
+  margin-top: 5rem;
+}
+
+.tag{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: #14788e;
+  font-weight: 900;
+}
+.card-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100rem;
+  height: 20rem;
+  border-radius: 6px 6px 0 0;
+  border-radius: 10px;
+  transition: 0.3s ease-in; 
+
+}
+.card-image1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  border-radius: 6px 6px 0 0;
+  border-radius: 10px;
+}
+
+
+
+.card-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-image:hover {
+  transform: scale(0.90);
+}
+.card-image1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-image1:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
   color: white;
+  padding: 10px 7px 0;
+  /* font-size: 13px; */
 }
 
-.App-link {
-  color: #61dafb;
+.category:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  font-weight: 600;
+  color: #FFff  ;
+  padding: 7px;
+  position: relative;
 }
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: white;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+.author2 {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 20px;
+}
+.author1 {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-top: 20px;
+  
+}
+
+.name {
+  font-weight: 400;
+  color: #c4e90d;
+  
+}
+.name1 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFF;
+  
+}
+
+.name:hover {
+  cursor: pointer;
+}
+.btn{
+  padding: 13px;
+  font-size: 14px;
+  background-color: #0c2461;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  top: 20rem;
+  left:0.5rem;
+  margin: auto;
+  width: 95%;
+  transition: 0.4s ease-in-out;
+}
+.btnn{
+  padding: 13px;
+  font-size: 14px;
+  background-color: #0c2461;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;  
+  position: absolute;
+  top: 5rem;
+  left:0.5rem;
+  transition: 0.4s ease-in-out;
+
+}
+.btnn:hover{
+  background-color: #14788e;
+
+}
+.btn:hover{
+  background-color: white;
+  color: #34495e;
+  font-weight: 700;
+
+ 
+}
+/* <<<<<<<<<<<<<<,End Product Card>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  width: 85px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#232a30 50px, transparent 0),
+                    linear-gradient(#14788e 50px, transparent 0),
+                    linear-gradient(#232a30 50px, transparent 0),
+                    linear-gradient(#14788e 50px, transparent 0),
+                    linear-gradient(#232a30 50px, transparent 0),
+                    linear-gradient(#14788e 50px, transparent 0);
+  background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
+  animation: rikSpikeRoll 0.65s linear infinite alternate;
+}
+@keyframes rikSpikeRoll {
+0% { background-size: 10px 3px;}
+16% { background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+33% { background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+50% { background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px}
+66% { background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px}
+83% { background-size: 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px, 10px 3px}
+100% { background-size: 10px 3px, 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px}
+}
+
+/* <<<<<<<___________________________>>>> */
